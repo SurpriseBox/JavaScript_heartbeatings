@@ -1,0 +1,29 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="heart.css">
+	<script src="heart.js"></script>
+</head>
+
+<body class="body">
+	<section class="heart-block">
+		<img class="body__heart-image" src="heart.svg">
+
+		<script type="text/javascript">
+			let heart_obj = document.body.querySelector(".body__heart-image");
+			heart_obj.style.cssText += 'transition-duration: 0.1s;';
+		</script>
+
+		<section class="control-block">
+			<button class="control-block__adrenaline-button" onclick="adrenaline()">Адреналин</button>
+			<button class="control-block__reanimation-button" onclick="reanimate()">Реанимация</button>
+
+			<div class="heartbeats">
+				<div>Ударов в минуту: </div>
+				<div class="heartbeats__counter"></div>
+
+				<script type="text/javascript">
+					let heartbeats_counter = document.body.querySelector(".heartbeats__counter");
+				</script>
+			</div>
+		</section>
+	</section>
+</body>
